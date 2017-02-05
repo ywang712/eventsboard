@@ -5,8 +5,8 @@
 <% @events.each do |e| %>
   <div>
 	<h4><%= link_to e.title, e %></h4>
-	<p><%= e.start_date %></p>
-	<p><%= e.end_date %></p>
+	<p><%= time_format(e.start_date) %></p>
+	<p><%= time_format(e.end_date) %></p>
 	<p><%= e.venue %>, <%= e.location %></p>
   </div>
 <% end %>
